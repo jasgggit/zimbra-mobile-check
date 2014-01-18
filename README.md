@@ -2,7 +2,6 @@ zimbra-mobile-check
 ===================
 
 notify zimbra users when a new mobile device is registered on their account
-http://forums.zextras.com/zxmobile/827-notify-users-when-new-mobile-device-registered.html
 
 Intro
 =====
@@ -42,3 +41,11 @@ Prerequisites
 
 * Zimbra with ZeXtras Mobile Sync (http://www.zextras.com/)
 * logtail (RedHat: yum install logcheck | debian: apt-get install logtail)
+
+Notes
+=====
+
+Tested with Zimbra 8.0.x and ZeXtras 1.8.12.
+
+http://forums.zextras.com/zxmobile/827-notify-users-when-new-mobile-device-registered.html
+
