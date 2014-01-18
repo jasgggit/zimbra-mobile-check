@@ -2,6 +2,7 @@ zimbra-mobile-check
 ===================
 
 notify zimbra users when a new mobile device is registered on their account
+http://forums.zextras.com/zxmobile/827-notify-users-when-new-mobile-device-registered.html
 
 Intro
 =====
@@ -29,6 +30,12 @@ Check the results in /path/to/log
     Fri Jan 17 14:00:38 EET 2014 First login from iPhone/ApplDNPLR1DGFFGD, adding to device database for takis@zimbra.gr
     Fri Jan 17 21:03:01 EET 2014 First login from Android/androidc897091636, creating new device database for sakis@zimbra.gr
     Fri Jan 17 21:05:01 EET 2014 First login from Android/361ecccca7c339ad9a644b4852be3804, adding to device database for sakis@zimbra.gr
+
+If you want to "reset" some particular user
+    rm -f /path/to/db/user@domain.com
+
+If you want to "reset" the entire database and start from the beginning
+    rm -rf /path/to/db/
 
 Prerequisites
 =============
