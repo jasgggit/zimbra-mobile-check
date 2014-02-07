@@ -1,9 +1,9 @@
 #!/bin/bash
 # notify users when a new mobile device is registered on their account
 
-LOCKFILE=$(mktemp).lock
+LOCKFILE="/tmp/$(basename $0).lock"
 [ -f ${LOCKFILE} ] && logger "mobile-check already running..." && echo "Already running..." && exit 1
-touch "${LOCKFILE}"
+date > ${LOCKFILE}
 
 IF=/opt/zimbra/log/sync.log
 TF=$(mktemp)
